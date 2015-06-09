@@ -1,0 +1,118 @@
+body {
+    background-color: #2CE;
+    color: white;
+}
+
+::selection {
+    background-color: #2C3E50;
+    color: #2CE;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    color: #2CE;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: justify;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+p#scroll {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 200;
+    color: white;
+    
+    -webkit-animation: fadein 2s;
+    -webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fadein {
+        from { opacity:0; }
+        to   { opacity:1; }
+}
+
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 90px;
+    font-weight: 200;
+    text-align: center;
+    -webkit-animation: fadein 2s;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+    color: #2CE;
+}
+
+.landing {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    
+section {
+    text-align: center;
+}
+
+section#navigation a {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 1;
+    
+    -webkit-animation: slideout 1.5s;
+    -webkit-animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes slideout {
+    from { 
+        opacity: 0;
+        padding-right: 5px; 
+        padding-left: 5px; 
+    }
+    to {
+        opacity: 1;
+        padding-right: 30px; 
+        padding-left: 30px; 
+    }
+}
+
+section#navigation a:hover {
+    // opacity: 1.0;
+    //padding-top: 100px;
+}
+
+div {
+    text-align: right;
+    padding-top: 3px;
+    padding-right: 5px;
+}
+
+div#close-modal a {
+    position: static;
+    opacity: 0.7;
+}
+
+div#close-modal a:hover {
+    opacity: 1.0;   
+}
+
+div#modal-content {
+    padding-left: 50px;
+    padding right: 50px;
+}
