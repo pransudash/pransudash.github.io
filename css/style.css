@@ -1,21 +1,22 @@
 body {
-    background-color: #2CE;
+    background-color: #23b4a4;
     color: white;
 }
 
 ::selection {
-    background-color: #2C3E50;
-    color: #2CE;
+    background-color: #000000;
+    color: #23b4a4;
 }
 
 p {
     font-family: 'Oxygen', sans-serif;
-    color: #2CE;
+    color: #23b4a4;
     font-size: 40px;
     font-weight: 100;
     text-align: justify;
     padding-left: 250px;
     padding-right: 250px;
+    opacity: ;
 }
 
 p#scroll {
@@ -38,7 +39,9 @@ h1 {
     font-size: 90px;
     font-weight: 200;
     text-align: center;
+    
     -webkit-animation: fadein 2s;
+    // -webkit-animation-timing-function: ease-in;
 }
 
 h2 {
@@ -53,7 +56,7 @@ h3 {
     font-size: 60px;
     font-weight: 200;
     text-align: center;
-    color: #2CE;
+    color: #23b4a4;
 }
 
 h4 {
@@ -62,6 +65,10 @@ h4 {
     font-weight: 400;
     text-align: center;
     color: #fff;
+    opacity: ;
+    
+    -webkit-animation: fadein 2s;
+    // -webkit-animation-timing-function: ease-in;
 }
 
 .landing {
@@ -81,7 +88,7 @@ section#navigation a {
     padding-bottom: 5px;
     padding-left: 30px;
     padding-right: 30px;
-    opacity: 1;
+    opacity: 0.9;
     
     -webkit-animation: slideout 1.5s;
     -webkit-animation-timing-function: ease-in;
@@ -94,7 +101,7 @@ section#navigation a {
         padding-left: 5px; 
     }
     to {
-        opacity: 1;
+        opacity: 0.85;
         padding-right: 30px; 
         padding-left: 30px; 
     }
