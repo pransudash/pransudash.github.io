@@ -1,6 +1,14 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 body {
     background-color: #23b4a4;
     color: white;
+    font-size: 40px;
 }
 
 ::selection {
@@ -105,11 +113,6 @@ section#navigation a {
         padding-right: 30px; 
         padding-left: 30px; 
     }
-}
-
-section#navigation a:hover {
-    // opacity: 1.0;
-    //padding-top: 100px;
 }
 
 div {
