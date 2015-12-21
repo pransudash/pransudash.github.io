@@ -5,15 +5,31 @@ html, body {
     margin: 0 auto;
 }
 
+::selection {
+    background-color: #dbdbdb;
+}
+
 body {
-    background-color: #23b4a4;
+/*    background-color: #23b4a4;*/
     color: white;
     font-size: 40px;
 }
 
-::selection {
-    background-color: #000000;
-    color: #23b4a4;
+.landing {
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 p {
@@ -44,12 +60,13 @@ p#scroll {
 
 h1 {
     font-family: 'Oxygen', sans-serif;
-    font-size: 90px;
-    font-weight: 200;
+    font-size: 85px;
+    font-weight: 300;
     text-align: center;
+    color: #23b4a4;
     
     -webkit-animation: fadein 2s;
-    // -webkit-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
 }
 
 h2 {
@@ -57,6 +74,7 @@ h2 {
     font-size: 60px;
     font-weight: 200;
     text-align: center;
+    color: #23b4a4;
 }
 
 h3 {
@@ -65,6 +83,9 @@ h3 {
     font-weight: 200;
     text-align: center;
     color: #23b4a4;
+    
+    -webkit-animation: fadein 2s;
+    -webkit-animation-timing-function: ease-in;
 }
 
 h4 {
@@ -72,18 +93,11 @@ h4 {
     font-size: 15px;
     font-weight: 400;
     text-align: center;
-    color: #fff;
+    color: #23b4a4;
     opacity: ;
     
     -webkit-animation: fadein 2s;
-    // -webkit-animation-timing-function: ease-in;
-}
-
-.landing {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    -webkit-animation-timing-function: ease-in;
 }
     
 section {
@@ -91,11 +105,15 @@ section {
 }
 
 section#navigation a {
+    color: #858585;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
     display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
     opacity: 0.9;
     
     -webkit-animation: slideout 1.5s;
@@ -105,13 +123,13 @@ section#navigation a {
 @-webkit-keyframes slideout {
     from { 
         opacity: 0;
-        padding-right: 5px; 
-        padding-left: 5px; 
+        padding-right: 0%; 
+        padding-left: 0%; 
     }
     to {
-        opacity: 0.85;
-        padding-right: 30px; 
-        padding-left: 30px; 
+        opacity: 0.8;
+        padding-right: 2%; 
+        padding-left: 2%; 
     }
 }
 
@@ -119,6 +137,10 @@ div {
     text-align: right;
     padding-top: 3px;
     padding-right: 5px;
+}
+
+#animatedModal {
+    background-color: #f6f6f6;
 }
 
 div#close-modal a {
@@ -131,6 +153,28 @@ div#close-modal a:hover {
 }
 
 div#modal-content {
-    padding-left: 50px;
-    padding right: 50px;
+    padding-left: 10px;
+    padding right: 10px;
 }
+
+div#scroll_down {
+    color:#23B4A4;
+}
+
+/*Particles*/
+/* ---- particles.js container ---- */
+
+#particles_js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    -webkit-animation: fadein 2s;
+    -webkit-animation-timing-function: ease-in;
+}
+

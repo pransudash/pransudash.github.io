@@ -11,10 +11,11 @@
 
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="animatedModal.js-master\demo\css\animate.min.css">
-        <link rel="stylesheet" href="FullscreenOverlayStyles/css/normalize.css" />
-<!--		<link rel="stylesheet" href="FullscreenOverlayStyles/css/demo.css" />-->
-		<link rel="stylesheet" href="FullscreenOverlayStyles/css/style2.css" />
+        <link rel="stylesheet" href="animatedModal.js-master/demo/css/animate.min.css">
+        <!--link rel="stylesheet" href="animatedModal.js-master/demo/css/normalize.min.css">
+        <!--link rel="stylesheet" href="FullscreenOverlayStyles/css/normalize.css" />
+        <link rel="stylesheet" href="FullscreenOverlayStyles/css/demo.css" />
+		<link rel="stylesheet" href="FullscreenOverlayStyles/css/style2.css" /-->
 
         <!-- Custom Fonts -->
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -27,64 +28,65 @@
     </head>
 
     <body>
+        <div id="particles_js" style="position: justify;"></div>
         <div class="landing">
-            <h1>Hi, I'm Pransu!</h1>
-        </div>
-        
-        <div class="landing">
+            <h1>Pransu Dash</h1>
             <section id="navigation">
                 <a id="demo01" href="#animatedModal">
                     <img src="img/person.png" width="170" height="170" 
                          onMouseOver="this.src='img/bio.png'"
                          onMouseOut="this.src='img/person.png'"/>
                     <!--https://www.google.com/search?q=pransu+dash-->
+<!--                    About Me-->
                 </a>
-                <a href="https://github.com/pransudash?tab=repositories" target="_blank">
+                <a id="demo02" href="#modal-02">
+                <!--href="https://github.com/pransudash?tab=repositories" target="_blank"-->
                     <img src="img/computer_portfolio.png" width="170" height="170" 
                          onMouseOver="this.src='img/portfolio.png'"
                          onMouseOut="this.src='img/computer_portfolio.png'"/>
+<!--                    Portfolio-->
                 </a>
                 <a href="mailto:pransudash@gmail.com" target="_blank">
                     <img src="img/contact.png" width="170" height="170"
                          onMouseOver="this.src='img/email.png'"
                          onMouseOut="this.src='img/contact.png'"/>
+<!--                    Email-->
                 </a>
                 <a href="https://www.linkedin.com/pub/pransu-dash/90/2b2/909?domainCountryName=&csrfToken=ajax%3A2140520902227442425" target="_blank">
                     <img src="img/linkedin.png" width="170" height="170" 
                          onMouseOver="this.src='img/connect.png'"
                          onMouseOut="this.src='img/linkedin.png'"/>
+<!--                    Linkedin-->
                 </a>
             </section>
         </div>
         
         <div class="landing">
             <!--h2>Click To Learn More About Me</h2-->
-            <p id="scroll">I was born to make a difference</p>
+            <h3>I was born to make a difference</h3>
         </div>
       
-        <div class="landing">
+        <!--div class="landing">
             <h4>Pransu Dash - 2015</h4>
         </div>
         
         <!--Call your modal-->
         <!--a id="demo01" href="#animatedModal">DEMO01</a-->
 
-        <script>
-            $("#demo01").animatedModal();
-        </script>
         <!--DEMO01-->
         <div id="animatedModal">
             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
             <div class="close-animatedModal" id="close-modal"> 
                 <a href="">
-                    <img src="img/close_modal.png" width="55" height="55"/>
+                    <img src="img/close_modal.png" width="80" height="80"/>
                 </a>
             </div>
-            <div >
+            <div>
                 <h3>About Me</h3>
+                <center><img src="img/profile.png" width="300" height="300"/></center>
                 <p>
                     Welcome to my website. I am a high school student in the Silicon Valley.
-                    Ever since I was a little kid, I have been fascinated by technology.
+                    Ever since I was a child, I have been fascinated by technology.
                 </p>
                 <p>
                     Today, I am a student, an entrepreneur, a creator, a developer, an athlete, a musician.
@@ -96,13 +98,67 @@
             </div>
         </div>
         
+        <div id="modal-02">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+            <div class="close-modal-02" id="close-modal"> 
+                <a href="">
+                    <img src="img/close_modal.png" width="80" height="80"/>
+                </a>
+            </div>
+            
+            <div>
+                <h3>Projects</h3>
+                <p>
+                    Check out some of the cool, crazy, and captivating projects I've worked on in my career.
+                    I've worked with Java, HTML, JavaScript, Python, C, Processing, Arduino and Spark. Feel 
+                    free to 
+                    <a id="hover_link" href="mailto:pransudash@gmail.com">contact</a> 
+                    me about anything I'm working on!
+                </p>
+                <center>
+                    <img src="img/arrow_down.png" width="65" height="65"/>
+                </center> 
+            </div>
+            
+            <div>
+                <h2>
+                    <a href="https://github.com/pransudash?tab=repositories" target="_blank">Github Portfolio</a>
+                </h2>
+            </div>
+        </div>
+        
         <!--Script-->
         <script src="animatedModal.js-master\demo\js\jquery.min.js"></script>
         <script src="animatedModal.js-master\animatedModal.min.js"></script>
-        <script src="FullscreenOverlayStyles/js/modernizr.custom.js"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="js/index.js"></script>
+        <!--script src="FullscreenOverlayStyles/js/modernizr.custom.js"></script-->
     </body>
 </html>
 
 <script>
-  $("#demo01").animatedModal();
+    $("#demo01").animatedModal({
+        modalTarget: 'animatedModal',
+        color: '#fff'
+    });
+
+    $("#demo02").animatedModal({
+        modalTarget:'modal-02',
+        /*animatedIn:'lightSpeedIn',
+        animatedOut:'bounceOutDown',*/
+        color:'#fff'
+        // Callbacks
+        /*beforeOpen: function() {
+            console.log("The animation was called");
+        },           
+        afterOpen: function() {
+            console.log("The animation is completed");
+        }, 
+        beforeClose: function() {
+            console.log("The animation was called");
+        }, 
+        afterClose: function() {
+            console.log("The animation is completed");
+        }*/
+    });
 </script>
