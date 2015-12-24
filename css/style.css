@@ -13,8 +13,7 @@ body {
 /*    background-color: #23b4a4;*/
     color: white;
     font-size: 40px;
-    width: auto;
-    height: auto;
+    margin: 0px auto;
 }
 
 .landing {
@@ -23,6 +22,8 @@ body {
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
+    width: 100%;
+    height: auto;
 }
 
 a {
