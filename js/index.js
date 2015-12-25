@@ -71,8 +71,8 @@ particlesJS("particles_js", {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "repulse"
+        "enable": true,
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
