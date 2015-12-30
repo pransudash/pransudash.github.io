@@ -32,8 +32,6 @@ particlesJS("particles_js", {
         "enable": true,
         "speed": 1.0,
         "opacity_min": 0.85,
-        "speed": 2.0,
-        "opacity_min": 0.75,
         "sync": false
       }
     },
@@ -44,8 +42,6 @@ particlesJS("particles_js", {
         "enable": true,
         "speed": 1.0,
         "size_min": 1.5,
-        "speed": 2.0,
-        "size_min": 0.15,
         "sync": false
       }
     },
