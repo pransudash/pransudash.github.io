@@ -18,13 +18,13 @@
 		<link rel="stylesheet" href="FullscreenOverlayStyles/css/style2.css" /-->
 
         <!-- Custom Fonts -->
-<!--        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+        <!--link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+        
         <!--Icons-->
         <link rel="icon" type="image/png" href="img/favicon.ico"></link>
-
     </head>
 
     <body>
@@ -83,7 +83,20 @@
             </div>
             <div>
                 <h3>About Me</h3>
-                <center><img src="img/profile.png" width="300" height="300"/></center>
+                <section id="navigation">
+                    <a id="center" href="resume.pdf">
+                        <img src="img/resume.png" width="170" height="170" 
+                         onMouseOver="this.src='img/resume_text.png'"
+                         onMouseOut="this.src='img/resume.png'"/>
+                    </a>
+                    <img src="img/profile.png" width="300" height="300"/>
+                    <a id="center" href="https://github.com/pransudash?tab=repositories">
+                        <img src="img/github.png" width="170" height="170" 
+                         onMouseOver="this.src='img/github_text.png'"
+                         onMouseOut="this.src='img/github.png'"/>
+                    </a>
+                </section>
+                <!--center><img src="img/profile.png" width="300" height="300"/></center-->
                 <p>
                     Welcome to my website. I am a high school student in the Silicon Valley.
                     Ever since I was a child, I have been fascinated by technology.
