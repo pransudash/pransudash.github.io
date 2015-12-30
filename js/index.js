@@ -30,8 +30,13 @@ particlesJS("particles_js", {
       "random": false,
       "anim": {
         "enable": true,
+<<<<<<< HEAD
         "speed": 1.0,
         "opacity_min": 0.85,
+=======
+        "speed": 2.0,
+        "opacity_min": 0.75,
+>>>>>>> origin/master
         "sync": false
       }
     },
@@ -40,8 +45,13 @@ particlesJS("particles_js", {
       "random": false,
       "anim": {
         "enable": true,
+<<<<<<< HEAD
         "speed": 1.0,
         "size_min": 1.5,
+=======
+        "speed": 2.0,
+        "size_min": 0.15,
+>>>>>>> origin/master
         "sync": false
       }
     },
@@ -54,7 +64,7 @@ particlesJS("particles_js", {
     },
     "move": {
       "enable": true,
-      "speed": 1.0,
+      "speed": 2.0,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -72,7 +82,7 @@ particlesJS("particles_js", {
     "events": {
       "onhover": {
         "enable": false,
-        "mode": "repulse"
+        "mode": "grab"
       },
       "onclick": {
         "enable": true,
