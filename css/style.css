@@ -1,7 +1,6 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+    height: auto;
+    width: auto;
     margin: 0 auto;
 }
 
@@ -108,10 +107,12 @@ section {
 }
 
 section#navigation a {
+/*
     color: #858585;
     font-family: 'Oxygen', sans-serif;
     font-size: 40px;
     font-weight: 200;
+*/
     display: inline-block;
     padding-top: 1%;
     padding-bottom: 0%;
@@ -119,8 +120,8 @@ section#navigation a {
     padding-right: 2%;
     opacity: 0.9;
     
-    -webkit-animation: slideout 1.5s;
-    -webkit-animation-timing-function: ease-in;
+    -webkit-animation: slideout 1.0s;
+    -webkit-animation-timing-function: ease-out;
 }
 
 a#center {

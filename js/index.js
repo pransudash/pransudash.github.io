@@ -50,7 +50,7 @@ particlesJS("particles_js", {
       "distance": 150,
       "color": "#b0b0b0",
       "opacity": 1.0,
-      "width": 1
+      "width": 0.7
     },
     "move": {
       "enable": true,
