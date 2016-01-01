@@ -21,7 +21,7 @@ body {
 }
 
 .landing {
-    position: relative;
+    position: fixed;
     padding-top: 10%;
     padding-left: 23%;
     width: auto;
@@ -29,14 +29,6 @@ body {
     
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
-}
-
-.modal {
-    position: relative;
-    padding-top: 3%;
-    padding-left: 23%;
-    width: auto;
-    height: auto;
 }
 
 h1 {
@@ -111,27 +103,26 @@ a:hover {
 }
 
 .nav {
-    position: relative;
-    padding-top: 0%;
-    padding-left: 0%;
-    width: 75%;
-    height: auto;
+    position: fixed;
+    padding-top: 10px;
+    width: 25%;
+    height: 0;
     display: inline-grid;
     
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
 }
 
-.nav-btn {
+.nav-btn-1 {
     border: 1px #376180;
     border-radius: 0px;
     background-color: #376180;
-    width: 85px;
+    width: 80px;
     height: 45px;
     cursor: pointer;
-    margin-top: 5%;
-    margin-right: 2%;
+    margin-top: 3.2%;
     
+    text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -140,12 +131,39 @@ a:hover {
     word-wrap: break-word;
 }
 
-.nav-btn:hover {
+.nav-btn-2 {
+    border: 1px #376180;
+    border-radius: 0px;
+    background-color: #376180;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 3.2%;
+    
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.6;
+    word-wrap: break-word;
+}
+
+.nav-btn-1:hover, .nav-btn-2:hover {
     background-color: #51caf2;
     letter-spacing: 1px;
     font-weight: 800;
     opacity: 1.0;
     transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.modal {
+    position: relative;
+    padding-top: 3%;
+    padding-left: 23%;
+    padding-bottom: 20%;
+    width: auto;
+    height: auto;
 }
 
 #animatedModal {

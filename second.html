@@ -45,16 +45,51 @@
                I am a coder, entrepreneur, thinker.
                Currently, I am seeking a future education in computer science.</p>        
             <div class="nav">
-                <input class="nav-btn" type="button" value="About" id="demo01" href="#animatedModal"/>
-                <input class="nav-btn" type="button" value="Projects" id="demo02" href="#modal-02"/>
-                <input class="nav-btn" type="button" value="GitHub"/>
-                <input class="nav-btn" type="button" value="Email"/>
-                <input class="nav-btn" type="button" value="Connect" 
-                       onclick="window.location=''"/>
-                <input class="nav-btn" type="button" value="Resume" onclick="window.location='resume.pdf'"/>
+                <button class="nav-btn-1" id="demo01" href="#animatedModal">About</button>
+                <button class="nav-btn-1" id="demo02" href="#modal-02">Projects</button>
+                <button class="nav-btn-1" onclick="window.location='resume.pdf'">Resume</button>
+                <button class="nav-btn-2" onclick="window.location='https://github.com/pransudash?tab=repositories'">
+                    <img src="img2/github.png" width="40px" height="40px"/>
+                </button>
+                <button class="nav-btn-2">
+                    <img src="img2/email.png" width="40px" height="40px"/>
+                </button>
+                <button class="nav-btn-2" onclick="window.location='https://www.linkedin.com/in/pransudash'">
+                    <img src="img2/linkedin.png" width="40px" height="40px"/>
+                </button>
             </div>
         </div>
         
+        <!--ABOUT MODAL-->
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+            <div class="close-animatedModal" id="close-modal"> 
+                <a href="">
+                    <img src="img/close_modal.png" width="80" height="80"/>
+                </a>
+            </div>
+            <div class="modal">
+                <h1>About Me</h1>
+                <br>
+                <img src="img/profile.png" width="300" height="300"/>
+                <br>
+                <br>
+                <p id="modal">
+                    Welcome to my website. I am a high school student in the Silicon Valley.
+                    Ever since I was a child, I have been fascinated by technology.
+                </p>
+                <p id="modal">
+                    Today, I am a student, an entrepreneur, a creator, a developer, an athlete, a musician.
+                </p>
+                <p id="modal">
+                    Check out my portfolio on github using the navigation buttons on this website
+                    or contact me via email or LinkedIn.
+                </p>
+            </div>
+        </div>
+        
+        
+        <!--PROJECTS MODAL-->
         <div id="modal-02">
             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
             <div class="close-modal-02" id="close-modal"> 
