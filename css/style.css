@@ -1,4 +1,4 @@
-html, body {
+html {
     height: auto;
     width: auto;
     margin: 0 auto;
@@ -10,49 +10,9 @@ html, body {
 
 body {
 /*    background-color: #23b4a4;*/
-    color: white;
+    color: none;
     font-size: 40px;
     margin: 0px auto;
-}
-
-.landing {
-    position: relative;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    width: 100%;
-    height: auto;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p {
-    font-family: 'Oxygen', sans-serif;
-    color: #23b4a4;
-    font-size: 40px;
-    font-weight: 100;
-    text-align: justify;
-    padding-left: 250px;
-    padding-right: 250px;
-    opacity: ;
-}
-
-p#scroll {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 200;
-    color: white;
-    
-    -webkit-animation: fadein 2s;
-    -webkit-animation-timing-function: ease-in;
 }
 
 @-webkit-keyframes fadein {
@@ -60,91 +20,174 @@ p#scroll {
         to   { opacity:1; }
 }
 
-h1 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 85px;
-    font-weight: 600;
-    text-align: center;
-    color: #444;
+.landing {
+    position: fixed;
+    padding-top: 9%;
+    padding-left: 23%;
+    width: auto;
+    height: auto;
     
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
+}
+
+h1 {
+    font-family: 'Lato', serif;
+    font-size: 230%;
+    font-weight: 700;
+    text-align: left;
+    color: #444;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 60px;
-    font-weight: 200;
-    text-align: center;
-    color: #23b4a4;
+    font-family: 'Lato', sans-serif;
+    font-size: 70%;
+    font-weight: 700;
+    text-align: left;
+    color: #51caf2;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
 }
 
 h3 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 60px;
-    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+    font-size: 70%;
+    font-weight: 700;
     text-align: center;
-    color: #23b4a4;
+    color: #444;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 47%;
+    font-weight: 500;
+    text-align: left;
+    color: #666;
+    margin: 0;
+    width: 70%;
+}
+
+p#welcome {
+    font-family: 'Lato', sans-serif;
+    font-size: 47%;
+    font-weight: 500;
+    text-align: left;
+    color: #666;
+    margin: 0;
+    width: 70%;
+}
+
+p#modal {
+    font-family: 'Lato', sans-serif;
+    font-size: 57%;
+    font-weight: 500;
+    text-align: left;
+    color: #444;
+    margin-top: 2%;
+    width: 70%;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    color: #51caf2;
+    text-decoration: none;
+    text-align: left;
+}
+
+a#button {
+    text-decoration: none;
+    padding-right: 0.7%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    position: fixed;
+    padding-top: 10px;
+    width: 25%;
+    height: 0;
+    display: inline-grid;
     
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
 }
 
-h4 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    text-align: center;
-    color: #23b4a4;
-    opacity: ;
+.nav-btn-1 {
+    border: 1px #376180;
+    border-radius: 0px;
+    background-color: #376180;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 3.2%;
     
-    -webkit-animation: fadein 2s;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.6;
+    word-wrap: break-word;
+}
+
+.nav-btn-2 {
+    border: 1px #376180;
+    border-radius: 0px;
+    background-color: #376180;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    margin-top: 3.2%;
+    
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.nav-btn-1:hover, .nav-btn-2:hover {
+    background-color: #51caf2;
+    letter-spacing: 1px;
+    font-weight: 800;
+    opacity: 1.0;
+    transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/*Particles*/
+/* ---- particles.js container ---- */
+
+#particles_js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    
+    -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
 }
-    
-section {
-    text-align: center;
-}
 
-section#navigation a {
-/*
-    color: #858585;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
-*/
-    display: inline-block;
-    padding-top: 1%;
-    padding-bottom: 0%;
-    padding-left: 2%;
-    padding-right: 2%;
-    opacity: 0.9;
-    
-    -webkit-animation: slideout 1.0s;
-    -webkit-animation-timing-function: ease-out;
-}
 
-a#center {
-    vertical-align: 100%;
-}
+/*Modals*/
 
-@-webkit-keyframes slideout {
-    from { 
-        opacity: 0;
-        padding-right: 0%; 
-        padding-left: 0%; 
-    }
-    to {
-        opacity: 0.8;
-        padding-right: 2%; 
-        padding-left: 2%; 
-    }
-}
-
-div {
-    text-align: right;
-    padding-top: 3px;
-    padding-right: 5px;
+.modal {
+    position: relative;
+    padding-top: 3%;
+    padding-left: 23%;
+    width: auto;
+    height: auto;
 }
 
 #animatedModal {
@@ -165,24 +208,51 @@ div#modal-content {
     padding right: 10px;
 }
 
-div#scroll_down {
-    color:#23B4A4;
+
+/*Portfolio Cards*/
+
+.card {
+    display: inline-grid;
+    position: relative;
+    float: left;
+    padding-bottom: 25%;
+    padding-right: 20px;
+    width: 25%;
 }
 
-/*Particles*/
-/* ---- particles.js container ---- */
+.card_front {
+    background-color: #fff;
+}
 
-#particles_js {
+.card_back {
+    background-color: #51caf2;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+
+.card_front, .card_back {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+}
     
-    -webkit-animation: fadein 2s;
-    -webkit-animation-timing-function: ease-in;
+.card_front, .card_back {    
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
 }
 
+/* --- card hover effect --- */
+
+/*
+.card:hover .card_front {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+}
+
+.card:hover .card_back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+}
+*/
