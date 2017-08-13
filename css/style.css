@@ -12,6 +12,7 @@ body {
     color: none;
     font-size: 40px;
     margin: 0px auto;
+    overflow: hidden;
 }
 
 @-webkit-keyframes fadein {
@@ -20,11 +21,12 @@ body {
 }
 
 .landing {
-    position: fixed;
+    position: absolute;
     padding-top: 9%;
     padding-left: 23%;
     width: auto;
     height: auto;
+    margin: 0;
     
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
@@ -107,7 +109,7 @@ a:hover {
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     padding-top: 10px;
     width: 330px;
     height: 0;
