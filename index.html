@@ -28,17 +28,6 @@
         <div id="particles_js" style="position: justify;"></div>
         
         <div class="landing">
-<!--
-            <div class="nav">
-                <input class="nav-btn" type="button" value="About" id="demo01" href="#animatedModal"/>
-                <input class="nav-btn" type="button" value="Projects" id="demo02" href="#modal-02"/>
-                <input class="nav-btn" type="button" value="GitHub"/>
-                <input class="nav-btn" type="button" value="Email"/>
-                <input class="nav-btn" type="button" value="Connect" 
-                       onclick="window.location=''"/>
-                <input class="nav-btn" type="button" value="Resume" onclick="window.location='resume.pdf'"/>
-            </div>
--->
             <h1>Pransu Dash</h1>
             <h2>Welcome to my website.</h2>
             <p id="welcome">I am a second year undergraduate student at UC Berkeley studying Computer Science. As a computer science student, I am always looking for new learning opporutnities in the field.
@@ -83,21 +72,16 @@
             <div class="modal">
                 <h1>About Me</h1>
                 <br>
-                <img src="img/profile.png" width="500" height="auto"/>
+                <img src="img/profile2.png" width="auto" height="300"/>
+                <img src="img/profile.png" width="auto" height="300"/>
                 <br>
                 <p id="modal">
                     Welcome to my website. I am an undergraduate computer science student at UC Berkeley.
                     Ever since I was a child, I have been fascinated by technology.
-                </p>
-                <p id="modal">
                     Today, I am a student, an entrepreneur, a creator, a developer, an athlete, a musician.
-                </p>
-                <p id="modal">
                     Check out my portfolio on github using the navigation buttons on this website
                     or contact me via email or LinkedIn.
                 </p>
-                <br>
-                <br>
                 <br>
             </div>
         </div>
@@ -113,12 +97,54 @@
             </div>
             
             <div class="modal">
-                <h1>Projects</h1>
+                <h1>Projects</h1>   
+                <p id="modal">
+                    Check out some of the cool, crazy, and captivating projects I've worked on in my career.
+                    I've worked with Java, Python, C, Swift, Javascript, Processing, Arduino and Spark. Feel 
+                    free to <a href="mailto:pransudash@gmail.com">contact</a> me about anything I'm working on!
+                </p>
                 <br>
-                <p>Page being updated, check again soon!</p>
+                <div class="card">
+                    <div class="card_front">
+                        <img src="portfolio_img/traffic_front.png" width="350px" height="350px"/>
+                    </div>
+                    <div class="card_back">
+                        <img src="portfolio_img/traffic_back.png" width="350px" height="350px"/>
+                    </div>
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card_front">
+                        <img src="portfolio_img/gun_front.png" width="350px" height="350px"/>
+                    </div>
+                    <div class="card_back">
+                        <img src="portfolio_img/gun_back.png" width="350px" height="350px"/>
+                    </div>
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card_front">
+                        <img src="portfolio_img/botworks_front.png" width="350px" height="350px"/>
+                    </div>
+                    <div class="card_back">
+                        <img src="portfolio_img/botworks_back.png" width="350px" height="350px"/>
+                    </div>
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card_front">
+                        <img src="portfolio_img/berkeley_front.png" width="350px" height="350px"/>
+                    </div>
+                    <div class="card_back">
+                        <img src="portfolio_img/berkeley_back.png" width="350px" height="350px"/>
+                    </div>
+                </div><!-- card -->
+                <div class="card">
+                    <div class="card_front">
+                        <img src="portfolio_img/stanford_front.png" width="350px" height="350px"/>
+                    </div>
+                    <div class="card_back">
+                        <img src="portfolio_img/stanford_back.png" width="350px" height="350px"/>
+                    </div>
+                </div><!-- card -->
             </div>
-            
-            
         </div><!-- modal -->
         
         
@@ -134,27 +160,16 @@
 <script>
     $("#demo01").animatedModal({
         modalTarget: 'animatedModal',
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
         color: '#fff'
     });
 
     $("#demo02").animatedModal({
         modalTarget:'modal-02',
-        /*animatedIn:'lightSpeedIn',
-        animatedOut:'bounceOutDown',*/
+        animatedIn:'bounceInUp',
+        animatedOut:'bounceOutDown',
         color:'#fff'
-        // Callbacks
-        /*beforeOpen: function() {
-            console.log("The animation was called");
-        },           
-        afterOpen: function() {
-            console.log("The animation is completed");
-        }, 
-        beforeClose: function() {
-            console.log("The animation was called");
-        }, 
-        afterClose: function() {
-            console.log("The animation is completed");
-        }*/
     });
     
     // Google Analytics
