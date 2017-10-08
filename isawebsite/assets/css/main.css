@@ -1655,10 +1655,11 @@
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../img/holiprev3.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
+        background-attachment: fixed;
 		text-align: center;
 	}
 
@@ -1843,6 +1844,7 @@
 				input[type="reset"].big,
 				button.big,
 				.button.big {
+                    background-color: #252122;
 					font-size: 1.5em;
 					padding: 0.75em 1.5em 0.75em 1.5em;
 				}
@@ -1948,7 +1950,7 @@
 					}
 
 					#nav > ul > li.current > a {
-						background: #d52349;
+						background: #252122;
 						color: #fff !important;
 						font-weight: 700;
 					}
@@ -2235,6 +2237,8 @@
 					left: 15px;
 					top: 15px;
 					margin: -40px 0 40px -30px;
+                    height: 650px;
+                    width: auto;
 				}
 
 		/* Button */
