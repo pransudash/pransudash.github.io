@@ -1390,20 +1390,20 @@
 		.image.featured {
 			display: block;
 			width: 100%;
-			margin: 0 0 2em 0;
+			margin: 0 0 0 0;
             
             height: 400px;
             overflow: hidden;
 		}
-        .image.featured img {
-            width: inherit;
-            height: auto;
-            margin: -350px 0 0 -250px;
-        }
+            .image.featured img {
+                width: inherit;
+                height: auto;
+                margin: -350px 0 0 -250px;
+            }
 
 		.image.left {
 			float: left;
-			margin: 0 2em 2em 0;
+			margin: 0 0 0 0;
 		}
 
 /* List */
@@ -1826,7 +1826,7 @@
 				padding: 2.75em 1.75em 2.75em 1.75em;
 			}
 
-				.box .image.featured {
+				.box .image.icon {
 					left: 1.75em;
 					top: 1.75em;
 					margin: -4.5em 0 4.25em -3.5em;
