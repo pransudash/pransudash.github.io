@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Berkeley ISA - Home</title>
+		<title>Berkeley ISA</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -36,7 +36,7 @@
 											<li><a href="misc.html">Miscellaneous</a></li>
 										</ul>
 									</li>
-									<li><a href="index.html#photos">Photos</a></li>
+									<li><a href="#photos" id="photos-nav">Photos</a></li>
                                     <li><a href="council.html">Council</a></li>
 									<li><a href="calendar.html">Calendar</a></li>
 								</ul>
@@ -52,6 +52,7 @@
 
 						<!-- Intro -->
 							<section id="intro" class="container">
+                                <br><br>
 								<div class="row">
 									<div class="4u 12u(mobile)">
 										<section class="first">
@@ -89,13 +90,15 @@
 										<li><a href="#" class="button big">Apply For 2017 - 2018 Council (CLOSED)</a></li>
 									</ul>
 								</footer>
+                                <br><br>
 							</section>
 
 					</div>
 				</div>
             
                 <div id="header">
-                    <section id="banner2">
+                    <section id="banner-blank">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                     </section>
                 </div>
 
@@ -164,15 +167,7 @@
 				<div id="footer-wrapper">
 					<section id="footer" class="container">
 						<div class="row">
-							<div class="8u 12u(mobile)">
-							</div>
-							<div class="4u 12u(mobile)">
-								<section>
-								</section>
-							</div>
-						</div>
-						<div class="row">
-							<div class="4u 12u(mobile)">
+							<div class="12u 12u(mobile)" style="text-align: center;">
 								<section>
 									<header>
 										<h2>Contact Us</h2>
@@ -180,12 +175,10 @@
 									<ul class="social">
 										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
 										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+                                        <li><a class="icon fa-instagram" href="#"><span class="label">Intsagram</span></a></li>
 									</ul>
 									<ul class="contact">
-										<li>
-											<h3>Mail</h3>
 											<p><a href="#">isaberkeley@gmail.com</a></p>
-										</li>
 									</ul>
 								</section>
 							</div>
@@ -206,3 +199,33 @@
 
 	</body>
 </html>
+
+<script>
+    var ypos, section;
+    window.addEventListener('scroll', function() {
+        ypos = window.pageYOffset;
+        section = document.getElementById('banner');
+        section.style.backgroundPositionY = ypos * -0.1 + 'px';
+    });
+</script>
+<script>
+    var ypos, section;
+    window.addEventListener('scroll', function() {
+        ypos = window.pageYOffset;
+        section = document.getElementById('banner-blank');
+        section.style.backgroundPositionY = ypos * -0.1 + 'px';
+    });
+</script>
+<script>
+function scrollNav() {
+    $('#photos-nav').click(function(){
+        //Animate
+        $('html, body').stop().animate({
+            scrollTop: $( $(this).attr('href') ).offset().top - 0
+        }, 800);
+        return false;
+    });
+}
+scrollNav();
+</script>
+

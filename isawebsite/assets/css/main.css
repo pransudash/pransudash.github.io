@@ -1335,7 +1335,7 @@
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #252122;
+			background: #e53359;
 		}
 
 			input[type="button"].alt:hover,
@@ -1343,7 +1343,7 @@
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #353132;
+				background: #c51349;
 			}
 
 			input[type="button"].alt:active,
@@ -1391,7 +1391,15 @@
 			display: block;
 			width: 100%;
 			margin: 0 0 2em 0;
+            
+            height: 400px;
+            overflow: hidden;
 		}
+        .image.featured img {
+            width: inherit;
+            height: auto;
+            margin: -350px 0 0 -250px;
+        }
 
 		.image.left {
 			float: left;
@@ -1467,6 +1475,7 @@
 		}
 
 		ul.dates .date strong {
+            color: #fff;
 			display: block;
 			font-size: 1.75em;
 			padding-top: 0.15em;
@@ -1655,7 +1664,7 @@
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../img/holiprev3.jpg");
+		background: #CCE8F4 url("../../img/holiprev1.jpg");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -1679,6 +1688,16 @@
 				font-style: normal;
 				margin: 0;
 			}
+
+    #banner-blank {
+		background: #CCE8F4 url("../../img/holiprev4.jpg");
+		background-position: center center;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+        background-attachment: fixed;
+		text-align: center;
+        height: 40%;
+	}
 
 /* Wrappers */
 
