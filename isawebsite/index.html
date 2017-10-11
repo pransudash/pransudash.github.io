@@ -21,11 +21,11 @@
 					<div id="header">
 
 						<!-- Logo -->
-							<h1><a href="index.html"><img src="img/isalogo1.png" height="100px" width="auto" style="padding: 0;"></a></h1>
+							<h1><a href="index.html"><img src="img/isalogo1.jpg" height="100px" width="auto" style="padding: 0;"></a></h1>
 
 						<!-- Nav -->
 							<nav id="nav">
-								<ul>
+								<ul id="nav-scroll">
 									<li class="current"><a href="index.html">Home</a></li>
 									<li>
 										<a href="#">Events</a>
@@ -173,11 +173,11 @@
 										<h2>Contact Us</h2>
 									</header>
 									<ul class="social">
-										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
-										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-                                        <li><a class="icon fa-instagram" href="#"><span class="label">Intsagram</span></a></li>
+										<li><a class="icon fa-facebook" href="https://www.facebook.com/isaberkeley/"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+                                        <li><a class="icon fa-instagram" href="https://www.instagram.com/isaberkeley/"><span class="label">Intsagram</span></a></li>
                                         <br><br>
-                                        <p><a href="#">isaberkeley@gmail.com</a></p>
+                                        <p><a>isaberkeley@gmail.com</a></p>
 									</ul>
 								</section>
 							</div>
@@ -232,5 +232,20 @@ function scrollNav() {
     });
 }
 scrollNav();
+    
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 500) {
+        $('#nav').css('background', '#fff');
+        $('#nav').css('top', $(window).scrollTop());
+    }
+});
 </script>
+
+<style>
+    #nav {
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+    }
+</style>
 
