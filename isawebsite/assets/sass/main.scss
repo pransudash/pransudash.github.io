@@ -475,8 +475,8 @@
 					height: 3em;
 					text-align: center;
 					border-radius: 5px;
-					background: #888;
-					@include vendor('transition', 'background-color .25s ease-in-out');
+					background: #000;
+					@include vendor('transition', '.25s ease-in-out');
 
 					&:before {
 						color: #fff;
@@ -492,35 +492,11 @@
 						}
 					}
 
-					&.fa-twitter {
-						background: #2daae4;
-
-						&:hover {
-							background: #3dbaf4;
-						}
-					}
-
-					&.fa-dribbble {
+					&.fa-instagram {
 						background: #c4376b;
 
 						&:hover {
 							background: #d4477b;
-						}
-					}
-
-					&.fa-linkedin {
-						background: #006599;
-
-						&:hover {
-							background: #1075a9;
-						}
-					}
-
-					&.fa-tumblr {
-						background: #2b4661;
-
-						&:hover {
-							background: #3b5671;
 						}
 					}
 

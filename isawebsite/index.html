@@ -10,7 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/w3.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/slider.css" />
+        <link rel="stylesheet" href="assets/css/lightslider.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body class="homepage">
@@ -28,17 +31,35 @@
 								<ul id="nav-scroll">
 									<li class="current"><a href="index.html">Home</a></li>
 									<li>
-										<a href="#">Events</a>
+										<a>Events</a>
 										<ul>
 											<li><a href="holi.html">Holi</a></li>
 											<li><a href="garba.html">Raas Garba</a></li>
 											<li><a href="diwali.html">Diwali</a></li>
-											<li><a href="misc.html">Miscellaneous</a></li>
+											<li><a href="misc.html">Other Events</a></li>
 										</ul>
 									</li>
 									<li><a href="#photos" id="photos-nav">Photos</a></li>
                                     <li><a href="council.html">Council</a></li>
 									<li><a href="calendar.html">Calendar</a></li>
+                                    <a onclick="document.getElementById('diwali-modal').style.display='block'" class="button alt">Diwali Banquet!</a>
+                                    <div id="diwali-modal" class="w3-modal">
+                                        <div class="w3-modal-content w3-animate-top w3-card-4">
+                                            <header class="w3-container w3-black"> 
+                                                <span onclick="document.getElementById('diwali-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                                                <h2 style="color:#fff; line-height: 200%;">Diwali 2017</h2>
+                                            </header>
+                                            <div class="w3-container">
+                                                <img style="float:left; margin-right:4%;" src="img/diwaliflyer.jpg" width="40%">
+                                                <p style="text-align: justify">Join us at our annual Diwali Banquet as we celebrate this festive holiday with great food, dancing, and performances by multiple talent groups on campus!</p>
+                                                <p style="text-align: justify; font-style:italic;">We are selling tickets for the 2 weeks leading up to the event on Sproul. Ticket prices go up at the door, so buy them soon!</p>
+                                                <a style="float:right;" href="diwali.html" class="button alt">Learn More</a>
+                                            </div>
+                                            <footer class="w3-container w3-white">
+                                                <h1 style="line-height:100%;">October 27th: Save the date!</h1>
+                                            </footer>
+                                        </div>
+                                    </div>
 								</ul>
 							</nav>
 
@@ -91,8 +112,7 @@
 									</ul>
 								</footer>
                                 <br><br>
-							</section>
-
+                        </section>
 					</div>
 				</div>
             
@@ -109,55 +129,76 @@
 							<div class="12u">
 
 								<!-- Portfolio -->
-									<section>
-										<header class="major">
-											<h2>Photos</h2>
-										</header>
-										<div class="row">
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a class="image sample"><img src="img/iconholi.png" alt="" /></a>
-													<header>
-														<h3>Holi</h3>
-													</header>
-				
-													<footer>
-														<a href="holi.html" class="button alt">See more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a class="image sample"><img src="img/diwali4.jpg" alt="" /></a>
-													<header>
-														<h3>Diwali</h3>
-													</header>
-													
-													<footer>
-														<a href="diwali.html" class="button alt">See more</a>
-													</footer>
-												</section>
-											</div>
-											<div class="4u 12u(mobile)">
-												<section class="box">
-													<a class="image sample"><img src="img/raasicon.png" alt="" /></a>
-													<header>
-														<h3>Raas Garba</h3>
-													</header>
-												
-													<footer>
-														<a href="garba.html" class="button alt">See more</a>
-													</footer>
-												</section>
-											</div>
-										</div>
-									</section>
+                                <section>
+                                    <header class="major">
+                                        <h2>Photos</h2>
+                                    </header>
+                                    <div class="row">
+                                        <div class="4u 12u(mobile)">
+                                            <section class="box">
+                                                <ul class="image" id="holiSlider">
+                                                    <li class="icon">
+                                                        <img class="event" src="img/holi/17359480_655510684632080_7871485994932862847_o.jpg" alt="" />
+                                                    </li>
+                                                    <li class="icon">
+                                                        <img class="event" src="img/holi/22450512_10207993808402174_375819244_o%20(1).jpg" alt="" />
+                                                    </li>
+                                                    <li class="icon">
+                                                        <img class="event" src="img/holi/22450494_10207993808162168_1220304473_o.jpg" alt="" />
+                                                    </li>
+                                                    <li class="icon">
+                                                        <img class="event" src="img/holi/22450504_10207993808642180_181879212_o%20(1).jpg" alt="" />
+                                                    </li>
+                                                </ul>
+                                                <header>
+                                                    <h3>Holi</h3>
+                                                </header>
 
-							</div>
-						</div>
-						<div class="row">
-							<div class="12u">
+                                                <footer>
+                                                    <a href="holi.html" class="button alt">See more</a>
+                                                </footer>
+                                            </section>
+                                        </div>
+                                        <div class="4u 12u(mobile)">
+                                            <section class="box">
+                                                <ul class="image" id="diwaliSlider">
+                                                    <li class="icon">
+                                                        <img class="event" src="img/diwali/22473706_10207993807442150_943847237_o.jpg" alt="" />
+                                                    </li>
+                                                    <li class="icon">
+                                                        <img class="event" src="img/diwali/22494581_10207993807482151_475297869_o.jpg" alt="" />
+                                                    </li>
+                                                </ul>
+                                                <header>
+                                                    <h3>Diwali</h3>
+                                                </header>
 
+                                                <footer>
+                                                    <a href="diwali.html" class="button alt">See more</a>
+                                                </footer>
+                                            </section>
+                                        </div>
+                                        <div class="4u 12u(mobile)">
+                                            <section class="box">
+                                                <ul class="image" id="garbaSlider">
+                                                    <li class="icon">
+                                                        <img class="event" src="img/raas/22472162_10207993807202144_1287320262_o.jpg" alt="" />
+                                                    </li>
+                                                    <li class="icon">
+                                                        <img class="event" src="img/raas/22472164_10207993807122142_1364633108_o.jpg" alt="" />
+                                                    </li>
+                                                </ul>
+                                                <header>
+                                                    <h3>Raas Garba</h3>
+                                                </header>
+
+                                                <footer>
+                                                    <a href="garba.html" class="button alt">See more</a>
+                                                </footer>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </section>
 							</div>
 						</div>
 					</div>
@@ -174,7 +215,6 @@
 									</header>
 									<ul class="social">
 										<li><a class="icon fa-facebook" href="https://www.facebook.com/isaberkeley/"><span class="label">Facebook</span></a></li>
-										<li><a class="icon fa-google-plus"><span class="label">Google+</span></a></li>
                                         <li><a class="icon fa-instagram" href="https://www.instagram.com/isaberkeley/"><span class="label">Intsagram</span></a></li>
                                         <br><br>
                                         <p><a>isaberkeley@gmail.com</a></p>
@@ -195,32 +235,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/lightslider.js"></script>
 
 	</body>
 </html>
 
-<script>
-    var ypos, section;
-    ypos = window.pageYOffset;
-        section = document.getElementById('banner');
-        section.style.backgroundPositionY = ypos * -0.1 + 'px';
-    window.addEventListener('scroll', function() {
-        ypos = window.pageYOffset;
-        section = document.getElementById('banner');
-        section.style.backgroundPositionY = ypos * -0.1 + 'px';
-    });
-</script>
-<script>
-    var ypos, section;
-    ypos = window.pageYOffset;
-        section = document.getElementById('banner-blank');
-        section.style.backgroundPositionY = ypos * -0.1 + 'px';
-    window.addEventListener('scroll', function() {
-        ypos = window.pageYOffset;
-        section = document.getElementById('banner-blank');
-        section.style.backgroundPositionY = ypos * -0.1 + 'px';
-    });
-</script>
+
 <script>
 function scrollNav() {
     $('#photos-nav').click(function(){
@@ -233,12 +253,47 @@ function scrollNav() {
 }
 scrollNav();
     
-//$(window).scroll(function () {
-//    if ($(window).scrollTop() > 500) {
-//        $('#nav').css('background', '#fff');
-//        $('#nav').css('top', $(window).scrollTop());
+$(document).ready(function() {
+//    var files = {'jpg':10};
+//    for (var ext in files){
+//        for (var i = 0; i < files[ext]; i++){
+//            var src = "img/holi/" + i + "." + ext;
+//            var img = new Image(); 
+//            img.src = src;
+//            $("#lightSlider").appendChild(img);
+//        }
 //    }
-//});
+    var sliderH = $("#holiSlider").lightSlider({
+        item: 1,
+        loop: true,
+        auto: true,
+        slideMargin: 10,
+        controls: false,
+        gallery: false,
+        pager: false,
+        pause: 2000
+    });
+    var sliderD = $("#diwaliSlider").lightSlider({
+        item: 1,
+        loop: true,
+        auto: true,
+        slideMargin: 10,
+        controls: false,
+        gallery: false,
+        pager: false,
+        pause: 2500
+    });
+    var sliderG = $("#garbaSlider").lightSlider({
+        item: 1,
+        loop: true,
+        auto: true,
+        slideMargin: 10,
+        controls: false,
+        gallery: false,
+        pager: false,
+        pause: 3000
+    });
+});
 </script>
 
 <style>

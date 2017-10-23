@@ -1,0 +1,97 @@
+
+.slider-item {
+    display: inline-block;
+}
+.slider-img {
+    display: inline;
+    width: 100%;
+    height: auto;
+}
+.w3-modal{
+    z-index:3000;
+    padding-top:10%;
+    padding-bottom:10%;
+}
+.w3-modal-content{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width: 60%;
+}
+.w3-animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}@keyframes animatetop{
+    from{
+        top:-300px;
+        opacity:0
+    } to{
+        top:0;
+        opacity:1
+    }
+}
+
+.w3-animate-left{
+    position:relative;
+    animation:animateleft 0.4s
+}@keyframes animateleft{
+    from{
+        left:-300px;
+        opacity:0
+    } to{
+        left:0;
+        opacity:1
+    }
+}
+
+.w3-animate-right{
+    position:relative;
+    animation:animateright 0.4s
+}@keyframes animateright{
+    from{
+        right:-300px;
+        opacity:0
+    } to{
+        right:0;
+        opacity:1
+    }
+}
+
+.w3-animate-bottom{
+    position:relative;
+    animation:animatebottom 0.4s
+}@keyframes animatebottom{
+    from{
+        bottom:-300px;
+        opacity:0
+    } to{
+        bottom:0;
+        opacity:1
+    }
+}
+
+.w3-card-4{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-container{
+    padding:0.05em 7%;
+}
+.w3-container:after,.w3-container:before{
+    content:"";
+    display:table;
+    clear:both
+}
+
+.w3-red,.w3-hover-red:hover{
+    color:#fff !important;
+    background-color:#e53359 !important
+}
+
+.w3-black,.w3-hover-black:hover{
+    color:#fff !important;
+    background-color:#000 !important
+}
+

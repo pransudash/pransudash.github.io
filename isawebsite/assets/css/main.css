@@ -1069,7 +1069,7 @@
 /* Basic */
 
 	body {
-		background: #252122;
+		background: #000000;
 		background-image: url("images/bg02.png");
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
@@ -1094,7 +1094,7 @@
 	}
 
 	strong, b {
-		color: #252122;
+		color: #000000;
 		font-weight: 400;
 	}
 
@@ -1121,7 +1121,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #252122;
+		color: #000000;
 		font-weight: 700;
 	}
 
@@ -1158,7 +1158,7 @@
 
 	form label {
 		display: block;
-		color: #252122;
+		color: #000000;
 		font-weight: 400;
 		margin: 0 0 0.5em 0;
 	}
@@ -1373,7 +1373,6 @@
 	}
 
 		.image img {
-			display: block;
 			width: 100%;
 		}
 
@@ -1388,29 +1387,22 @@
 			}
 
 		.image.featured {
-			display: block;
+			display: inline;
 			width: 100%;
-			margin: 0 0 0 0;
-            
-            height: 400px;
-            overflow: hidden;
+            height: auto;
+			margin: 0;
 		}
             .image.featured img {
-                width: inherit;
-                height: auto;
-                margin: -350px 0 0 -250px;
+                width: 30%;
+/*                margin: -350px 0 0 -250px;*/
             }
 
-        .image.sample {
-			display: block;
-			width: auto;
-            height: 300px;
-            overflow: hidden;
+        .image.event {
+            min-height: 200%;
+            max-height: 200%;
 		}
-            .image.sample img {
-                width: auto;
-                height: 100%;
-                margin: -50px 0 0 -25px;
+            .image.event img {
+                width: 100%;
             }
 
 		.image.left {
@@ -1560,44 +1552,12 @@
 						background: #4c6aa8;
 					}
 
-				ul.social li a.fa-twitter {
-					background: #2daae4;
+				ul.social li a.fa-instagram {
+					background: #C40462;
 				}
 
-					ul.social li a.fa-twitter:hover {
-						background: #3dbaf4;
-					}
-
-				ul.social li a.fa-dribbble {
-					background: #c4376b;
-				}
-
-					ul.social li a.fa-dribbble:hover {
-						background: #d4477b;
-					}
-
-				ul.social li a.fa-linkedin {
-					background: #006599;
-				}
-
-					ul.social li a.fa-linkedin:hover {
-						background: #1075a9;
-					}
-
-				ul.social li a.fa-tumblr {
-					background: #2b4661;
-				}
-
-					ul.social li a.fa-tumblr:hover {
-						background: #3b5671;
-					}
-
-				ul.social li a.fa-google-plus {
-					background: #da2713;
-				}
-
-					ul.social li a.fa-google-plus:hover {
-						background: #ea3723;
+					ul.social li a.fa-instagram:hover {
+						background: #D22D7E;
 					}
 
 	ol.default {
@@ -1633,7 +1593,7 @@
 			position: relative;
 			display: inline-block;
 			background-color: #d52349;
-			width: 9em;
+			width: 10em;
 			padding: 1.75em 0 0.75em 0;
 			border-top-left-radius: 5px;
 			border-top-right-radius: 5px;
@@ -1658,11 +1618,11 @@
 			}
 
 			.icon.featured.alt {
-				background-color: #252122;
+				background-color: #000000;
 			}
 
 				.icon.featured.alt:after {
-					border-top-color: #252122;
+					border-top-color: #000000;
 				}
 
 			.icon.featured.alt2 {
@@ -1676,17 +1636,17 @@
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../img/holiprev1.jpg");
+        background: url("../../img/ISAback.jpg");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
         background-attachment: fixed;
 		text-align: center;
+        height: 40%;
 	}
 
 		#banner header {
-			background-color: #252122;
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: #000000;
 		}
 
 			#banner header h2 {
@@ -1702,7 +1662,7 @@
 			}
 
     #banner-blank {
-		background: #CCE8F4 url("../../img/holiprev4.jpg");
+		background: url("../../img/ISAback2.jpg");
 		background-position: center center;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
@@ -1788,7 +1748,7 @@
 
 		#copyright .links {
 			display: inline-block;
-			background: #2C2929;
+			background: #000000;
 			background: rgba(255, 255, 255, 0.05);
 			border-radius: 5px;
 			margin: 0;
@@ -1841,6 +1801,7 @@
 				.box .image.icon {
 					left: 1.75em;
 					top: 1.75em;
+                    bottom: 1.75em;
 					margin: -4.5em 0 4.25em -3.5em;
 				}
 
@@ -1875,7 +1836,7 @@
 				input[type="reset"].big,
 				button.big,
 				.button.big {
-                    background-color: #252122;
+                    background-color: #000000;
 					font-size: 1.5em;
 					padding: 0.75em 1.5em 0.75em 1.5em;
 				}
@@ -1941,7 +1902,7 @@
 			}
 
 				#header h1 {
-					color: #252122;
+					color: #000000;
 					font-weight: 900;
 					font-size: 2.5em;
 					letter-spacing: -0.035em;
@@ -1981,14 +1942,14 @@
 					}
 
 					#nav > ul > li.current > a {
-						background: #252122;
+						background: #000000;
 						color: #fff !important;
 						font-weight: 700;
 					}
 
 			.dropotron {
 				border-radius: 5px;
-				background-color: #252122;
+				background-color: #000000;
 				background-color: rgba(34, 30, 31, 0.98);
 				padding: 1.25em 1.5em 1.25em 1.5em;
 				font-style: italic;
@@ -2029,7 +1990,7 @@
 						top: -9px;
 						border-left: solid 10px transparent;
 						border-right: solid 10px transparent;
-						border-bottom: solid 10px #252122;
+						border-bottom: solid 10px #000000;
 						border-bottom-color: rgba(34, 30, 31, 0.98);
 					}
 
@@ -2364,7 +2325,7 @@
 				position: fixed;
 				top: 0;
 				width: 100%;
-				z-index: 10001;
+				z-index: 1;
 				background: none;
 			}
 
@@ -2419,7 +2380,7 @@
 				position: fixed;
 				top: 0;
 				width: 275px;
-				z-index: 10002;
+				z-index: 200;
 				color: #858484;
 				background-image: url("images/bg02.png");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
@@ -2536,7 +2497,7 @@
 			}
 
 				#header h1 {
-					color: #252122;
+					color: #000000;
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
