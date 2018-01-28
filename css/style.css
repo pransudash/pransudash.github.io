@@ -28,8 +28,10 @@ body {
     height: auto;
     margin: 0;
     
+/*
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
+*/
 }
 
 h1 {
@@ -115,8 +117,10 @@ a:hover {
     height: 0;
     display: inline-block;
     
+/*
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
+*/
 }
 
 .nav-btn-1 {
@@ -176,8 +180,10 @@ a:hover {
     background-size: cover;
     background-position: 50% 50%;
     
+/*
     -webkit-animation: fadein 1.5s;
     -webkit-animation-timing-function: ease-in;
+*/
 }
 
 
@@ -212,7 +218,7 @@ div#modal-content {
 /*Portfolio Cards*/
 
 .card {
-    display: inline-grid;
+    display: inline-flex;
     position: relative;
     float: left;
     padding-bottom: 25%;
@@ -253,4 +259,9 @@ div#modal-content {
 .card:hover .card_back {
     -webkit-transform: rotateY(0);
 /*    transform: rotateY(0);*/
+}
+
+.card-img {
+    width: 90%;
+    height: 87%;
 }
