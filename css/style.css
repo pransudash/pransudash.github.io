@@ -28,10 +28,8 @@ body {
     height: auto;
     margin: 0;
     
-/*
-    -webkit-animation: fadein 1.5s;
+    -webkit-animation: fadein 1s;
     -webkit-animation-timing-function: ease-in;
-*/
 }
 
 h1 {
@@ -117,10 +115,8 @@ a:hover {
     height: 0;
     display: inline-block;
     
-/*
-    -webkit-animation: fadein 1.5s;
+    -webkit-animation: fadein 1s;
     -webkit-animation-timing-function: ease-in;
-*/
 }
 
 .nav-btn-1 {
@@ -180,10 +176,8 @@ a:hover {
     background-size: cover;
     background-position: 50% 50%;
     
-/*
-    -webkit-animation: fadein 1.5s;
+    -webkit-animation: fadein 1s;
     -webkit-animation-timing-function: ease-in;
-*/
 }
 
 

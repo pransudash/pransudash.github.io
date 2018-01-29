@@ -34,10 +34,10 @@
                 Feel free to reach out to me!</p>        
             <div class="nav">
                 <a id="button">
-                    <button class="nav-btn-1" id="demo01" href="#animatedModal">About</button>
+                    <button class="nav-btn-1" id="demo01" href="#animatedModal" onclick="document.getElementById('animatedModal').style.visibility='visible'">About</button>
                 </a>
                 <a id="button">
-                    <button class="nav-btn-1" id="demo02" href="#modal-02">Projects</button>
+                    <button class="nav-btn-1" id="demo02" href="#modal-02" onclick="document.getElementById('modal-02').style.visibility='visible'">Projects</button>
                 </a>
                 <a id="button" href="resume.pdf">
                     <button class="nav-btn-1">Resume</button>
@@ -62,10 +62,10 @@
         </div>
         
         <!--ABOUT MODAL-->
-        <div id="animatedModal">
+        <div id="animatedModal" style="visibility:hidden;">
             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
             <div class="close-animatedModal" id="close-modal"> 
-                <a href="">
+                <a href="" onclick="setTimeout(function hideModal(){document.getElementById('animatedModal').style.visibility='hidden';}, 500)">
                     <img src="img/close_modal.png" width="80" height="80"/>
                 </a>
             </div>
@@ -88,10 +88,10 @@
         
         
         <!--PROJECTS MODAL-->
-        <div id="modal-02">
+        <div id="modal-02" style="visibility: hidden">
             <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
             <div class="close-modal-02" id="close-modal"> 
-                <a href="">
+                <a href="" onclick="setTimeout(function hideModal(){document.getElementById('modal-02').style.visibility='hidden';}, 500)">
                     <img src="img/close_modal.png" width="80" height="80"/>
                 </a>
             </div>
